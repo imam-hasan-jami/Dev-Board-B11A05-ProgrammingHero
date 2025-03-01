@@ -111,9 +111,9 @@
                 <!-- bottom part -->
                 <div class="grid grid-cols-3 gap-9">
                     <!-- 1st card start -->
-                    <div class="bg-body rounded-2xl mt-8 ml-6">
+                    <div class="task-container bg-body rounded-2xl mt-8 ml-6">
                         <h6 class="font-poppins text-base bg-primary rounded-lg py-2 px-4 w-30 ml-6 mt-6">ShopEase</h6>
-                        <h3 class="font-poppins text-2xl ml-6 mt-4">Fix Mobile Button Issue</h3>
+                        <h3 class="task-title font-poppins text-2xl ml-6 mt-4">Fix Mobile Button Issue</h3>
                         <p class="font-poppins text-black/50 bg-primary mb-4 mt-4 p-4 mx-6 rounded-lg">
                             Debug using Chrome DevTools, check for overlapping ...
                         </p>
@@ -130,9 +130,9 @@
                     </div>
 
                     <!-- 2nd card start -->
-                    <div class="bg-body rounded-2xl mt-8">
+                    <div class="task-container bg-body rounded-2xl mt-8">
                         <h6 class="font-poppins text-base bg-primary rounded-lg py-2 px-4 w-30 ml-6 mt-6">CloudSync</h6>
-                        <h3 class="font-poppins text-2xl ml-6 mt-4">Add Dark Mode</h3>
+                        <h3 class="task-title font-poppins text-2xl ml-6 mt-4">Add Dark Mode</h3>
                         <p class="font-poppins text-black/50 bg-primary mb-4 mt-4 p-4 mx-6 rounded-lg">
                             Store the user's preference in localStorage, update CSS ...
                         </p>
@@ -149,9 +149,9 @@
                     </div>
 
                     <!-- 3rd card start -->
-                    <div class="bg-body rounded-2xl mt-8 mr-6">
+                    <div class="task-container bg-body rounded-2xl mt-8 mr-6">
                         <h6 class="font-poppins text-base bg-primary rounded-lg py-2 px-4 w-26 ml-6 mt-6">SwiftPay</h6>
-                        <h3 class="font-poppins text-2xl ml-6 mt-4">Optimize Home page</h3>
+                        <h3 class="task-title font-poppins text-2xl ml-6 mt-4">Optimize Home page</h3>
                         <p class="font-poppins text-black/50 bg-primary mb-4 mt-4 p-4 mx-6 rounded-lg">
                             Debug using Chrome DevTools, check for overlapping ...
                         </p>
@@ -168,9 +168,9 @@
                     </div>
 
                     <!-- 4th card start -->
-                    <div class="bg-body rounded-2xl mb-9 ml-6">
+                    <div class="task-container bg-body rounded-2xl mb-9 ml-6">
                         <h6 class="font-poppins text-base bg-primary rounded-lg py-2 px-4 w-18 ml-6 mt-6">Meta</h6>
-                        <h3 class="font-poppins text-2xl ml-6 mt-4">Add new emoji 🤲</h3>
+                        <h3 class="task-title font-poppins text-2xl ml-6 mt-4">Add new emoji 🤲</h3>
                         <p class="font-poppins text-black/50 bg-primary mb-4 mt-4 p-4 mx-6 rounded-lg">
                             Debug using Chrome DevTools, check for overlapping ...
                         </p>
@@ -187,10 +187,10 @@
                     </div>
 
                     <!-- 5th card start -->
-                    <div class="bg-body rounded-2xl mb-9">
+                    <div class="task-container bg-body rounded-2xl mb-9">
                         <h6 class="font-poppins text-base bg-primary rounded-lg py-2 px-4 w-31 ml-6 mt-6">Google LLC
                         </h6>
-                        <h3 class="font-poppins text-2xl ml-6 mt-4">Integrate OpenAI API</h3>
+                        <h3 class="task-title font-poppins text-2xl ml-6 mt-4">Integrate OpenAI API</h3>
                         <p class="font-poppins text-black/50 bg-primary mb-4 mt-4 p-4 mx-6 rounded-lg">
                             Debug using Chrome DevTools, check for overlapping ...
                         </p>
@@ -207,9 +207,9 @@
                     </div>
 
                     <!-- 6th card start -->
-                    <div class="bg-body rounded-2xl mb-9 mr-6">
+                    <div class="task-container bg-body rounded-2xl mb-9 mr-6">
                         <h6 class="font-poppins text-base bg-primary rounded-lg py-2 px-4 w-30 ml-6 mt-6">Glassdoar</h6>
-                        <h3 class="font-poppins text-2xl ml-6 mt-4">Improve Job searching</h3>
+                        <h3 class="task-title font-poppins text-2xl ml-6 mt-4">Improve Job searching</h3>
                         <p class="font-poppins text-black/50 bg-primary mb-4 mt-4 p-4 mx-6 rounded-lg">
                             Debug using Chrome DevTools, check for overlapping ...
                         </p>
@@ -235,8 +235,13 @@
                         <h3 class="font-poppins text-xl">Activity Log</h3>
                     </div>
                     <div class="flex justify-center">
-                        <button class="bg-button text-white font-poppins px-3 py-3 rounded-lg">Clear History</button>
+                        <button id="btn-clear"
+                            class="bg-button text-white font-poppins cursor-pointer px-3 py-3 rounded-lg">Clear
+                            History</button>
                     </div>
+                </div>
+                <div id="activity-log">
+
                 </div>
             </div>
         </section>
