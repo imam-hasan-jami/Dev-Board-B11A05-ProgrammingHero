@@ -28,6 +28,14 @@
         .bg-primary {
             background-color: #FFFFFF;
         }
+
+        .bg-gradient {
+            background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%, rgb(108, 127, 250) 52.66%, rgb(155, 168, 248) 99.733%);
+        }
+
+        .border-dashed {
+            border-bottom: 0.8px dashed rgba(55, 82, 253, 0.2);
+        }
     </style>
 </head>
 
@@ -50,6 +58,59 @@
             <button class="cursor-pointer"><img src="./assets/theme-btn.png" alt=""></button>
         </div>
     </nav>
+
+    <!-- main section -->
+    <main class="max-w-[1536px] mx-auto">
+        <section class="grid grid-cols-4 gap-6">
+
+            <!-- Task Div -->
+            <div class="bg-primary col-span-3 rounded-2xl">
+
+                <!-- top part -->
+                <div class="grid grid-cols-7 gap-5 border-b border-dashed">
+
+                    <!-- 1st card -->
+                    <div class="flex items-center gap-5 col-span-2 bg-body m-6 mr-0 pl-8 rounded-xl">
+                        <!-- tick mark img -->
+                        <div class="bg-primary p-[18px] rounded-[40px]">
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+
+                        <!-- text -->
+                        <div class="pr-5 pt-8 pb-6">
+                            <h6 class="font-poppins text-base">Task Assigned</h6>
+                            <h1 class="text-3xl font-bold">05</h1>
+                        </div>
+                    </div>
+
+                    <!-- 2nd card -->
+                    <div class="flex items-center gap-6 col-span-3 bg-gradient m-6 ml-0 mr-0 pl-8 rounded-xl">
+                        <img src="./assets/board.png" alt="">
+                        <h3 class="font-poppins text-2xl text-white">Discover Something <br> New Today!</h3>
+                    </div>
+
+                    <!-- 3rd card -->
+                    <div class="flex items-center gap-4 col-span-2 bg-body m-6 ml-0 pl-7 rounded-xl">
+                        <div class="bg-primary p-[18px] rounded-[40px]">
+                            <img src="./assets/calender.png" alt="">
+                        </div>
+                        <h3 class="font-poppins text-[22px]">Wed , <br>
+                            <span class="font-bold">Jul 28, 2025</span>
+                        </h3>
+                    </div>
+                </div>
+
+
+                <!-- bottom part -->
+            </div>
+
+            <!-- Activity Div -->
+            <div class="bg-primary col-span-1">
+
+
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
