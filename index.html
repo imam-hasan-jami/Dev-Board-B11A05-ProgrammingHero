@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bg-body {
+            background-color: #F4F7FF;
+        }
+
+        .bg-primary {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+
+<body class="bg-body">
+
+    <!-- navbar -->
+    <nav class="bg-primary max-w-[1536px] mx-auto p-6 rounded-2xl flex justify-between items-center my-5">
+        <!-- logo + title -->
+        <div class="flex items-center gap-2">
+            <img src="./assets/logo.png " alt="">
+            <h1 class="font-poppins text-4xl"><span class="font-extralight">Dev</span><span
+                    class="font-bold">Board</span></h1>
+        </div>
+        <!-- checkbox + color picker -->
+        <div class="flex items-center gap-9">
+            <div class="flex items-center gap-4 bg-body p-4 rounded-[32px]">
+                <img src="./assets/checkbox.png" alt="">
+                <h1 class="font-poppins text-3xl font-bold">23</h1>
+            </div>
+            <button class="cursor-pointer"><img src="./assets/theme-btn.png" alt=""></button>
+        </div>
+    </nav>
+</body>
+
+</html>
