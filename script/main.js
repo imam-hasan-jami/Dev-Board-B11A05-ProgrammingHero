@@ -43,6 +43,10 @@ for (let i = 0; i < completedBtn.length; i++) {
 
             alert("Board Updated Successfully");
 
+            if (convertedAssignedTask === 0) {
+                alert("Congrats!!! You have completed all the current tasks");
+            }
+
             this.disabled = true;
 
             this.style.backgroundColor = "#949ee3";
@@ -52,7 +56,7 @@ for (let i = 0; i < completedBtn.length; i++) {
 }
 
 // clear history button
-document.getElementById("btn-clear").addEventListener("click", function() {
+document.getElementById("btn-clear").addEventListener("click", function () {
     let activityLog = document.getElementById("activity-log");
     activityLog.innerHTML = "";
 })
