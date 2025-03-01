@@ -33,8 +33,16 @@
             background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%, rgb(108, 127, 250) 52.66%, rgb(155, 168, 248) 99.733%);
         }
 
-        .border-dashed {
+        .bg-button {
+            background: rgb(55, 82, 253);
+        }
+
+        .border-dashed-bottom {
             border-bottom: 0.8px dashed rgba(55, 82, 253, 0.2);
+        }
+
+        .border-dashed-top {
+            border-top: 0.8px dashed rgba(55, 82, 253, 0.2);
         }
     </style>
 </head>
@@ -67,7 +75,7 @@
             <div class="bg-primary col-span-3 rounded-2xl">
 
                 <!-- top part -->
-                <div class="grid grid-cols-7 gap-5 border-b border-dashed">
+                <div class="grid grid-cols-7 gap-5 border-dashed-bottom">
 
                     <!-- 1st card -->
                     <div class="flex items-center gap-5 col-span-2 bg-body m-6 mr-0 pl-8 rounded-xl">
@@ -100,13 +108,30 @@
                     </div>
                 </div>
 
-
                 <!-- bottom part -->
+                <div class="grid grid-cols-3 gap-9">
+                    <!-- card start -->
+                    <div class="bg-body rounded-2xl mt-8 mb-9 ml-6">
+                        <h6 class="font-poppins text-base bg-primary rounded-lg py-2 px-4 w-30 ml-6 mt-6">ShopEase</h6>
+                        <h3 class="font-poppins text-2xl ml-6 mt-4">Fix Mobile Button Issue </h3>
+                        <p class="font-poppins text-black/50 bg-primary mb-4 mt-4 p-4 mx-6 rounded-lg">
+                            Debug using Chrome DevTools, check for overlapping ...
+                        </p>
+
+                        <!-- lower part of the card -->
+                        <div class="flex items-center gap-12 pt-3 mb-5 border-dashed-top">
+                            <div>
+                                <p class="font-poppins text-[14px] text-black/70 ml-6">Deadline</p>
+                                <h6 class="font-poppins ml-6">21 March 2025</h6>
+                            </div>
+                            <button class="font-poppins text-white bg-button px-[20px] py-[10px] rounded-lg">Completed</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Activity Div -->
             <div class="bg-primary col-span-1">
-
 
             </div>
         </section>
