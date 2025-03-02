@@ -60,3 +60,14 @@ document.getElementById("btn-clear").addEventListener("click", function () {
     let activityLog = document.getElementById("activity-log");
     activityLog.innerHTML = "";
 })
+
+//discover something new
+document.getElementById("discover-new").addEventListener("click", function() {
+    window.location.href = "./discover.html";
+})
+
+//back to desk button
+// document.getElementById("btn-back-to-desk").addEventListener("click", function() {
+//     window.location.href = "./index.html";
+//     console.log("Back to desk");
+// })
